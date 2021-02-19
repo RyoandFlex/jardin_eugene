@@ -18,6 +18,12 @@
   color: #3A535D;
 }
 
+.fixed {
+  position: fixed;
+}
+
+
+/* Style --> slider arrows */
 .slick-prev:before, .slick-next:before {
   color: rgb(0, 0, 0) !important;
   font-size: 30px !important;
@@ -40,6 +46,21 @@
   margin-bottom: 30px;
   padding: 0;
 }
+/* Fin style --> slider arrows */
+
+#phare {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+#phare::after {
+  content: '';
+  height: 10px;
+  background-color: #F0F0F0;
+  flex-grow: 1;
+  margin-left: 20px;
+}
 
 #seed-name, #price {
   text-align: center;
@@ -54,3 +75,50 @@
 #miniatures {
   width: 65%;
 }
+
+#contactbar {
+  background-color: #2B545D;
+  text-align: center;
+}
+
+#contactbar #contact {
+  color: #EC8700;
+  font-size: .5em;
+}
+
+#contactbar #accueil {
+  color: white;
+  font-size: .5em;
+}
+
+.error {
+  color: red;
+}
+
+/* Style --> Back to top arrow */
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #65AB2E;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #65AB2E;
+  color: #3A535D;
+}
+/* Fin style --> Back to top arrow */

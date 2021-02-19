@@ -19,30 +19,33 @@
 </head>
 
 <body>
-
-  <div class="container-fluid" id="topbar1">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-start">Votre grainetier en ligne !</div>
-        <div class="col-6 d-flex justify-content-end">Mon compte</div>
+  <div class="topnav">
+    <div class="container-fluid" id="topbar1">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-start">Votre grainetier en ligne !</div>
+          <div class="col-6 d-flex justify-content-end">Mon compte</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container" id="logo">
-    <div class="row">
-      <div class="col-12"><img src="./images/Eugene_logo.png" alt="logo" class="img-fluid" width="200px" ;></div>
+    <div class="container d-none d-lg-block" id="logo">
+      <div class="row">
+        <div class="col-12"><img src="./images/Eugene_logo.png" alt="logo" class="img-fluid" width="200px" ;></div>
+      </div>
     </div>
-  </div>
 
-  <div class="container-fluid" id="topbar2">
-    <nav class="row">
-      <div class="col"></div>
-      <p class="col-lg-4 col-sm-12 border-top border-end d-flex justify-content-end" id="link1">Graines Potagères</p>
-      <div class="col-lg-3 col-sm-12 border-top border-end d-flex justify-content-center" id="link2">Graines Fleurs</div>
-      <p class="col-lg-4 col-sm-12 border-top d-flex justify-content-start" id="link3">Graines Aromatiques et médicinales</p>
-      <div class="col"></div>
-    </nav>
+    <div class="container-fluid" id="topbar2">
+      <div class="row">
+        <div class="col"></div>
+        <p class="col-lg-4 col-sm-12 border-top border-end d-flex justify-content-end" id="link1">Graines Potagères</p>
+        <div class="col-lg-3 col-sm-12 border-top border-end d-flex justify-content-center" id="link2">Graines Fleurs
+        </div>
+        <p class="col-lg-4 col-sm-12 border-top d-flex justify-content-start" id="link3">Graines Aromatiques et
+          médicinales</p>
+        <div class="col"></div>
+      </div>
+    </div>
   </div>
 
   <div class="container-fluid">
@@ -55,9 +58,19 @@
     </div>
   </div>
 
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <h1 id="phare">Produits phares</h1>
+    </div>
+  </div>
+
+  <br>
+
   <div class="container-fluid" id="miniatures">
     <div class="row">
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 ">
         <img src="./images/pasteque-janosik.jpg" alt="">
         <figcaption id="seed-name">Pastèque Janosik</figcaption>
         <figcaption id="price">1,95 €</figcaption>
@@ -100,11 +113,113 @@
     </div>
   </div>
 
-  <div class="container" style="background: tan;">
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid" id="contactbar">
     <div class="row">
-      <h1>Contacts</h1>
+      <h1><span id="accueil">Accueil / </span><span id="contact">Contactez-nous</span></h1>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row mt-5 mb-5">
+      <div class=" col-md-4 col-lg-3">
+        <h3>Informations</h3>
+        <div id="map">
+          <i class="fas fa-map-marker-alt fas-heigth"></i>
+          <div>
+            Le jardin d'Eugene
+            <br>
+            8 rue du Luxembourg
+            <br>
+            L-5752 Frisange
+            <br>
+            Luxembourg
+          </div>
+        </div>
+        <div id="phone">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            Appelez-nous:
+            <br>
+            +352 26 36 29 84
+          </div>
+        </div>
+        <div id="mail">
+          <i class="fas fa-envelope"></i>
+          <div>
+            Envoyez-nous un e-mail:
+            <br>
+            contact@lejardindeugene.com
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-9">
+        <div id="formcontact">
+          <div class="row">
+            <h2 class="col-lg-12">Contactez-nous</h2>
+          </div>
+          <div>
+            <div class="col-lg-3 text-lg-end">
+              <label for="sujet">Sujet</label>
+            </div>
+            <div class="col-lg-5">
+              <select id="sujet" name="sujet" class="form-select">
+
+              </select>
+            </div>
+            <div class="col-lg-4" id="errorS">
+              * champ obligatoire
+            </div>
+          </div>
+          <div>
+            <div class="col-lg-3 text-lg-end">
+              <label for="mail">Adresse e-mail</label>
+            </div>
+            <div class="col-lg-5">
+              <input id="mail" type="text" placeholder="votre@email.com" class="form-control">
+            </div>
+            <div class="col-lg-4" id="errorM">
+              * champ obligatoire
+            </div>
+          </div>
+          <div>
+            <div class="col-lg-3 text-lg-end">
+              <label for="doc">Document joint</label>
+            </div>
+            <div class="col-lg-5">
+              <input class="form-control" type="file" id="document">
+            </div>
+            <div class="col-lg-4">
+              * optionnel
+            </div>
+          </div>
+          <div>
+            <div class="col-lg-3 text-lg-end">
+              <label for="area">Message</label>
+            </div>
+            <div class="col-lg-5">
+              <textarea class="form-control" name="area" id="texte" rows="3"
+                placeholder="Comment pouvons-nous aider ?"></textarea>
+            </div>
+            <div class="col-lg-4" id="errorT">
+              * champ obligatoire
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-end">
+              <button type="button" class="btn btn-dark btn-lg" onclick="checkF()">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
 
 
 
@@ -122,15 +237,70 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  
+
   <script>
-    $(document).ready(function(){
-            $('.slider').slick(
-                {   
-                    dots:true
-                }
-            );
-        });
+    /*Slider*/
+    $(document).ready(function () {
+      $('.slider').slick({
+        dots: true
+      });
+    });
+
+    /*Hide arrow */
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        $('#back2top').hide;
+      }
+    });
+
+    /*Scroll to top*/
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 100) {
+        $('#back2Top').fadeIn();
+      } else {
+        $('#back2Top').fadeOut();
+      }
+    });
+    $(document).ready(function () {
+      $("#back2Top").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: 0
+        }, "slow");
+        return false;
+      });
+    });
+
+
+    function checkF() {
+      var sujet = $('#sujet').val();
+
+      if (sujet == '') {
+        $('#errorS').show();
+        $('#errorS').addClass('error');
+      } else {
+        $('#errorS').hide();
+      }
+
+      var mail = $('#mail').val();
+      var regMail = new RegExp('^[\\w.-_]+@[a-zA-Z0-9-_]+.[a-zA-Z]{2,4}$')
+
+      if (!regMail.test(mail)) {
+        $('#erreurM').show()
+        $('#erreurM').addClass('error')
+      } else {
+        $('#erreurM').hide()
+      }
+
+      var texte = $('#texte').val();
+
+      if (texte == '') {
+        $('#errorT').show();
+        $('#errorT').addClass('error');
+      } else {
+        $('#errorT').hide();
+      }
+    }
   </script>
 
 
