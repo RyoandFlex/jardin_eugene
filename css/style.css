@@ -17,3 +17,26 @@
   font-weight: bold;
   color: #3A535D;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: rgb(0, 0, 0) !important;
+  font-size: 30px !important;
+}
+.slick-prev{
+  left:10px !important;
+  top: 70% !important;
+}
+
+.slick-prev, .slick-next{
+  z-index: 1;
+}
+
+.slick-next {
+  right: 25px !important;
+  top: 70% !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+  padding: 0;
+}
