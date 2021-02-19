@@ -1,0 +1,19 @@
+#topbar1 {
+  background-color: #65AB2E;
+  height: 50px;
+  line-height: 50px;
+  color: white; 
+}
+
+#logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#topbar2 {
+  height: 80px;
+  line-height: 80px;
+  font-size: large;
+  font-weight: bold;
+  color: #3A535D;
+}
