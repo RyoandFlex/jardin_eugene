@@ -40,3 +40,17 @@
   margin-bottom: 30px;
   padding: 0;
 }
+
+#seed-name, #price {
+  text-align: center;
+}
+
+#price {
+  font-size: x-large;
+  font-weight: bold;
+  color: #65AB2E;
+}
+
+#miniatures {
+  width: 65%;
+}
