@@ -1,8 +1,19 @@
+* {
+  font-family: 'trebuchet MS';
+  box-sizing: border-box;
+}
+
 #topbar1 {
   background-color: #65AB2E;
   height: 50px;
   line-height: 50px;
-  color: white; 
+  color: white;
+}
+
+.topbarfixed {
+  position: fixed;
+  z-index: 1100;
+  margin-top: -10px;
 }
 
 #logo {
@@ -18,22 +29,39 @@
   color: #3A535D;
 }
 
+#topbar3 {
+  display: none;
+  height: 60px;
+  line-height: 40px;
+  font-size: large;
+  font-weight: bold;
+  color: #3A535D;
+  position: fixed;
+  z-index: 1101;
+  margin-top: -156px;
+  background-color: white;
+}
+
+
 .fixed {
   position: fixed;
 }
 
 
 /* Style --> slider arrows */
-.slick-prev:before, .slick-next:before {
+.slick-prev:before,
+.slick-next:before {
   color: rgb(0, 0, 0) !important;
   font-size: 30px !important;
 }
-.slick-prev{
-  left:10px !important;
+
+.slick-prev {
+  left: 10px !important;
   top: 70% !important;
 }
 
-.slick-prev, .slick-next{
+.slick-prev,
+.slick-next {
   z-index: 1;
 }
 
@@ -46,6 +74,7 @@
   margin-bottom: 30px;
   padding: 0;
 }
+
 /* Fin style --> slider arrows */
 
 #phare {
@@ -62,10 +91,6 @@
   margin-left: 20px;
 }
 
-#seed-name, #price {
-  text-align: center;
-}
-
 #price {
   font-size: x-large;
   font-weight: bold;
@@ -73,7 +98,41 @@
 }
 
 #miniatures {
-  width: 65%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.fas {
+  float: left;
+  font-size: 2em;
+  padding-top: 8px;
+}
+
+h2 {
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+#map,
+#phone,
+#mail {
+  padding: 30px;
+  color: #606060;
+}
+
+#phone,
+#mail {
+  border-top: 2px solid #BBBBBB;
+}
+
+#contact-us {
+  border: 2px solid #BBBBBB;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
 
 #contactbar {
@@ -81,7 +140,7 @@
   text-align: center;
 }
 
-#contactbar #contact {
+#contactbar #contacttext {
   color: #EC8700;
   font-size: .5em;
 }
@@ -89,6 +148,23 @@
 #contactbar #accueil {
   color: white;
   font-size: .5em;
+}
+
+#contactform {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+label {
+  float: left;
+  margin-left: 50px;
+}
+
+input {
+  display: block;
+  overflow: hidden;
 }
 
 .error {
@@ -116,9 +192,12 @@
   text-align: center;
   font-size: 30px;
   text-decoration: none;
+  margin-right: 18px;
 }
+
 #back2Top:hover {
   background-color: #65AB2E;
   color: #3A535D;
 }
+
 /* Fin style --> Back to top arrow */

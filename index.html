@@ -14,7 +14,6 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <script src="https://kit.fontawesome.com/62c98e86d0.js" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
 
 </head>
 
@@ -31,17 +30,32 @@
 
     <div class="container d-none d-lg-block" id="logo">
       <div class="row">
-        <div class="col-12"><img src="./images/Eugene_logo.png" alt="logo" class="img-fluid" width="200px" ;></div>
+        <div class="col-12"><img src="./images/Eugene_logo.png" alt="logo" class="img-fluid";></div>
       </div>
     </div>
 
     <div class="container-fluid" id="topbar2">
       <div class="row">
-        <div class="col"></div>
-        <p class="col-lg-4 col-sm-12 border-top border-end d-flex justify-content-end" id="link1">Graines Potagères</p>
-        <div class="col-lg-3 col-sm-12 border-top border-end d-flex justify-content-center" id="link2">Graines Fleurs
+        <div class="col d-none d-sm-none"></div>
+        <p class="col-4 border-top d-flex justify-content-end" id="link1">Graines Potagères</p>
+        <div class="col d-none d-sm-block border-top border-end"></div>
+        <div class="col-3 border-top border-end d-flex justify-content-center" id="link2">Graines Fleurs
         </div>
-        <p class="col-lg-4 col-sm-12 border-top d-flex justify-content-start" id="link3">Graines Aromatiques et
+        <div class="col d-none d-sm-block border-top"></div>
+        <p class="col-4 border-top d-flex justify-content-start" id="link3">Graines Aromatiques et
+          médicinales</p>
+        <div class="col d-none d-sm-block"></div>
+      </div>
+    </div>
+    <div class="container-fluid" id="topbar3">
+      <div class="row">
+        <div class="col"></div>
+        <p class="col-lg-4 col-sm-12 border-top d-flex justify-content-end" id="link1bis">Graines Potagères</p>
+        <div class="col border-top border-end"></div>
+        <div class="col-lg-3 col-sm-12 border-top border-end d-flex justify-content-center" id="link2bis">Graines Fleurs
+        </div>
+        <div class="col border-top"></div>
+        <p class="col-lg-4 col-sm-12 border-top d-flex justify-content-start" id="link3bis">Graines Aromatiques et
           médicinales</p>
         <div class="col"></div>
       </div>
@@ -70,46 +84,46 @@
 
   <div class="container-fluid" id="miniatures">
     <div class="row">
-      <div class="col-lg-3 col-sm-6 ">
-        <img src="./images/pasteque-janosik.jpg" alt="">
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/pasteque-janosik.jpg" alt="">
         <figcaption id="seed-name">Pastèque Janosik</figcaption>
         <figcaption id="price">1,95 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/aneth-officinale-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/aneth-officinale-bio.jpg" alt="">
         <figcaption id="seed-name">Aneth Officinale bio</figcaption>
         <figcaption id="price">3,10 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/basilic-italien-classic-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/basilic-italien-classic-bio.jpg" alt="">
         <figcaption id="seed-name">Basilic Italien Classic Bio</figcaption>
         <figcaption id="price">1,60 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/carotte-berlicumer-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/carotte-berlicumer-bio.jpg" alt="">
         <figcaption id="seed-name">Carotte Berlicumer Bio</figcaption>
         <figcaption id="price">3,80 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/pasteque-sugar-baby.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/pasteque-sugar-baby.jpg" alt="">
         <figcaption id="seed-name">Pastèque Sugar Baby</figcaption>
         <figcaption id="price">2,80 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/basilic-rouge-dark-opal-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/basilic-rouge-dark-opal-bio.jpg" alt="">
         <figcaption id="seed-name">Basilic Rouge Dark Opal Bio</figcaption>
         <figcaption id="price">1,60 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/betterave-cylindra-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/betterave-cylindra-bio.jpg" alt="">
         <figcaption id="seed-name">Betterave Cylinfra Bio</figcaption>
         <figcaption id="price">1,70 €</figcaption>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <img src="./images/carotte-orange-flakkee-2-de-colmar-bio.jpg" alt="">
+      </figure>
+      <figure class="figure col-lg-3 col-sm-6">
+        <img class="figure-img img-fluid" src="./images/carotte-orange-flakkee-2-de-colmar-bio.jpg" alt="">
         <figcaption id="seed-name">Carotte Orange Flakkée de Colmar</figcaption>
         <figcaption id="price">1,70 €</figcaption>
-      </div>
+      </figure>
     </div>
   </div>
 
@@ -119,92 +133,89 @@
 
   <div class="container-fluid" id="contactbar">
     <div class="row">
-      <h1><span id="accueil">Accueil / </span><span id="contact">Contactez-nous</span></h1>
+      <h1><span id="accueil">Accueil / </span><span id="contacttext">Contactez-nous</span></h1>
     </div>
   </div>
 
   <div class="container">
     <div class="row mt-5 mb-5">
-      <div class=" col-md-4 col-lg-3">
-        <h3>Informations</h3>
-        <div id="map">
-          <i class="fas fa-map-marker-alt fas-heigth"></i>
-          <div>
-            Le jardin d'Eugene
-            <br>
-            8 rue du Luxembourg
-            <br>
-            L-5752 Frisange
-            <br>
+      <div class="col-md-4 col-lg-3">
+        <h2>Informations</h2>
+        <div class="row" id="map">
+          <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="col-10">
+            Le jardin d'Eugene<br>
+            8 rue du Luxembourg<br>
+            L-5752 Frisange<br>
             Luxembourg
           </div>
         </div>
-        <div id="phone">
-          <i class="fas fa-phone-alt"></i>
-          <div>
-            Appelez-nous:
-            <br>
+        <div class="row" id="phone">
+          <div class="col-2"><i class="fas fa-phone-alt"></i></div>
+          <div class="col-10">
+            Appelez-nous:<br>
             +352 26 36 29 84
           </div>
         </div>
-        <div id="mail">
-          <i class="fas fa-envelope"></i>
-          <div>
-            Envoyez-nous un e-mail:
-            <br>
+        <div class="row" id="mail">
+          <div class="col-2"><i class="fas fa-envelope"></i></div>
+          <div class="col-10">
+            Envoyez-nous un e-mail:<br>
             contact@lejardindeugene.com
           </div>
         </div>
       </div>
       <div class="col-md-8 col-lg-9">
-        <div id="formcontact">
+        <div id="contact-us">
           <div class="row">
             <h2 class="col-lg-12">Contactez-nous</h2>
           </div>
-          <div>
+          <div class="row">
             <div class="col-lg-3 text-lg-end">
               <label for="sujet">Sujet</label>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6">
               <select id="sujet" name="sujet" class="form-select">
 
               </select>
             </div>
-            <div class="col-lg-4" id="errorS">
+            <div class="col-lg-3" id="errorS">
               * champ obligatoire
             </div>
           </div>
-          <div>
+          <div class="row">
             <div class="col-lg-3 text-lg-end">
-              <label for="mail">Adresse e-mail</label>
+              <label for="mail">Adresse email</label>
             </div>
-            <div class="col-lg-5">
-              <input id="mail" type="text" placeholder="votre@email.com" class="form-control">
+            <div class="col-lg-6">
+              <input id="email" type="text" placeholder="Votre adresse email" class="form-control">
             </div>
-            <div class="col-lg-4" id="errorM">
+            <div class="col-lg-3" id="errorM">
               * champ obligatoire
             </div>
           </div>
-          <div>
-            <div class="col-lg-3 text-lg-end">
-              <label for="doc">Document joint</label>
+          <div class="row">
+            <div class="col-lg-3">
+              <label for="document">Document joint</label>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-6">
               <input class="form-control" type="file" id="document">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3">
               * optionnel
             </div>
           </div>
-          <div>
+          <div class="row">
             <div class="col-lg-3 text-lg-end">
               <label for="area">Message</label>
             </div>
-            <div class="col-lg-5">
-              <textarea class="form-control" name="area" id="texte" rows="3"
+            <div class="col-lg-9">
+              <textarea class="form-control" name="area" id="texte" rows="4"
                 placeholder="Comment pouvons-nous aider ?"></textarea>
             </div>
-            <div class="col-lg-4" id="errorT">
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center" id="errorT">
               * champ obligatoire
             </div>
           </div>
@@ -220,18 +231,6 @@
 
   <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
@@ -246,6 +245,18 @@
       });
     });
 
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 200) {
+        $('#topbar1').addClass('topbarfixed');
+        $("#topbar2").css("display", "none");
+        $("#topbar3").css("display", "block");
+      } else {
+        $('#topbar1').removeClass('topbarfixed');
+        $("#topbar2").css("display", "block");
+        $("#topbar3").css("display", "none");
+      }
+    });
+
     /*Hide arrow */
     $(window).scroll(function () {
       if ($(window).scrollTop() > 300) {
@@ -255,7 +266,7 @@
 
     /*Scroll to top*/
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 100) {
+      if ($(window).scrollTop() > 300) {
         $('#back2Top').fadeIn();
       } else {
         $('#back2Top').fadeOut();
@@ -272,24 +283,39 @@
     });
 
 
+    /*Display subject option */
+    textSujet()
+
+    function textSujet() {
+      var text = '';
+      var tab = ['- Veuillez choisir un sujet -', 'Service client', 'Service technique', 'Service web', 'Service SAV'];
+
+      for (i of tab) {
+        text += '<option value="' + i + '">' + i + '</option>';
+      }
+
+      $('#sujet').append(text);
+    }
+
+    /*RegExp */
     function checkF() {
       var sujet = $('#sujet').val();
 
-      if (sujet == '') {
+      if (sujet == '- Veuillez choisir un sujet -') {
         $('#errorS').show();
         $('#errorS').addClass('error');
       } else {
         $('#errorS').hide();
       }
 
-      var mail = $('#mail').val();
-      var regMail = new RegExp('^[\\w.-_]+@[a-zA-Z0-9-_]+.[a-zA-Z]{2,4}$')
+      var mail = $('#email').val();
+      var regMail = new RegExp('^[\\w.-_]+@[a-zA-Z0-9-_]+.[a-zA-Z]{2,4}$');
 
-      if (!regMail.test(mail)) {
-        $('#erreurM').show()
-        $('#erreurM').addClass('error')
+      if (!regMail.test(mail) || mail == '') {
+        $('#errorM').show();
+        $('#errorM').addClass('error');
       } else {
-        $('#erreurM').hide()
+        $('#errorM').hide();
       }
 
       var texte = $('#texte').val();
